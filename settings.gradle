@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url uri('https://maven.pkg.github.com/samueldoriaNOVO/maprhreadsapp')
+            credentials {
+                username = 'samueldoriaNOVO'
+                password = '<token>'
+            }
+        }
+    }
+}
+rootProject.name = "MapThreadsApp"
+include ':app'
+include ':regionlibrary'
